@@ -75,10 +75,10 @@ class ClassicGeneralDialogWidget extends StatelessWidget {
       actions: actions ??
           [
             onNegativeClick != null
-                ? FlatButton(
+                ? TextButton(
                     onPressed: onNegativeClick,
-                    splashColor: Theme.of(context).splashColor,
-                    highlightColor: Theme.of(context).highlightColor,
+                    // splashColor: Theme.of(context).splashColor,
+                    // highlightColor: Theme.of(context).highlightColor,
                     child: Text(
                       negativeText ?? 'cancel',
                       style: negativeTextStyle ??
@@ -90,10 +90,10 @@ class ClassicGeneralDialogWidget extends StatelessWidget {
                   )
                 : null,
             onPositiveClick != null
-                ? FlatButton(
+                ? TextButton(
                     onPressed: onPositiveClick,
-                    splashColor: Theme.of(context).splashColor,
-                    highlightColor: Theme.of(context).highlightColor,
+                    // splashColor: Theme.of(context).splashColor,
+                    // highlightColor: Theme.of(context).highlightColor,
                     child: Text(
                       positiveText ?? 'confirm',
                       style: positiveTextStyle ??
@@ -312,10 +312,10 @@ class ClassicListDialogWidgetState<T> extends State<ClassicListDialogWidget> {
       actions: widget.actions ??
           [
             widget.onNegativeClick != null
-                ? FlatButton(
+                ? TextButton(
                     onPressed: widget.onNegativeClick,
-                    splashColor: Theme.of(context).splashColor,
-                    highlightColor: Theme.of(context).highlightColor,
+                    // splashColor: Theme.of(context).splashColor,
+                    // highlightColor: Theme.of(context).highlightColor,
                     child: Text(
                       widget.negativeText ?? 'cancel',
                       style: TextStyle(
@@ -325,7 +325,7 @@ class ClassicListDialogWidgetState<T> extends State<ClassicListDialogWidget> {
                     ),
                   )
                 : null,
-            FlatButton(
+            TextButton(
               onPressed: widget.onPositiveClick ??
                   () {
                     switch (widget.listType) {
@@ -347,8 +347,8 @@ class ClassicListDialogWidgetState<T> extends State<ClassicListDialogWidget> {
                         break;
                     }
                   },
-              splashColor: Theme.of(context).splashColor,
-              highlightColor: Theme.of(context).highlightColor,
+              // splashColor: Theme.of(context).splashColor,
+              // highlightColor: Theme.of(context).highlightColor,
               child: Text(
                 widget.positiveText ?? 'confirm',
                 style: TextStyle(
