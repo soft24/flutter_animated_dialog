@@ -89,7 +89,7 @@ Future<T> showAnimatedDialog<T>({
         Animation<double> secondaryAnimation) {
       final Widget pageChild = Builder(builder: builder);
       return SafeArea(
-        top: false,
+        // top: false,
         child: Builder(builder: (BuildContext context) {
           return theme != null
               ? Theme(data: theme, child: pageChild)
